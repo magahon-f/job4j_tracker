@@ -21,6 +21,14 @@
 
     <module name="TreeWalker">
 
+        <module name="RegexpSinglelineJava">
+            <property name="id" value="singlelineComment"/>
+            <metadata name="comment" value="Convert single-line comments into Javadocs"/>
+            <property name="severity" value="error"/>
+            <property name="format" value=".*\/\/.*"/>
+            <property name="message" value="Avoid single-line comments. Turn notes and explanations into public javadocs. "/>
+        </module>
+
         <module name="EmptyLineSeparator"> <!-- Java Style Guide: Source file structure -->
             <property name="tokens" value="
             CLASS_DEF, ENUM_DEF, INTERFACE_DEF, CTOR_DEF, STATIC_INIT, INSTANCE_INIT, VARIABLE_DEF, METHOD_DEF"/>
